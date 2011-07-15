@@ -63,7 +63,7 @@ var registrationForm = forms.create({
   confirm: fields.password({
     required: true,
     validators: [validators.matchField('password')]
-  }),
+  })
 });
 
 function validateUsernameFree(form, field, callback) {
