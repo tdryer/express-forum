@@ -1,0 +1,197 @@
+body {
+    margin: 0px;
+}
+
+#header {
+    background-color: black;
+    color: white;
+    height: 84px;
+    font-family: sans-serif;
+}
+
+#header ul {
+    float: right;
+    margin: 0px;
+}
+
+#header li {
+    list-style-type: none;
+    float: left;
+    line-height: 84px;
+    text-align: center;
+    margin-right: 1em;
+}
+
+#header li a {
+    display: block;
+    background-color: white;
+    color: black;
+    width: 100px;
+    text-decoration: none;
+    font-size: 14pt;
+}
+
+#header li a:hover {
+    background-color: #eaeada;
+}
+
+#header form {
+    background-color: black;
+}
+
+#header h1 {
+    float: left;
+    margin-left: 10px;
+    
+}
+
+#main {
+    width: 800px;
+    margin: 0 auto;
+    font-family: Georgia, serif;
+    font-size: 14pt;
+}
+
+#main h1 {
+    font-size: 14pt;
+}
+
+#main a {
+    color: blue;
+}
+
+#main form {
+    background-color: #c3d9ff;
+    width: 50%;
+    padding: 1em;
+}
+
+#main form div {
+    margin-bottom: 0.5em;
+}
+
+#main form label {
+    text-align: right;
+    float: left;
+    width: 21%;
+    padding-right: 2%;
+}
+
+#main form textarea, #main form input {
+    width: 75%;
+}
+
+#main form textarea {
+    height: 8em;
+}
+
+#main form input[type="submit"] {
+    margin-left: 25%;
+    margin-right: 30%; /* needed in some situations */
+    width: auto;
+}
+
+ul.form-errors {
+    color: red;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+p.error_msg {
+    color: red;
+    margin-bottom: 0.25em;
+    margin-top: 0.5em;
+}
+
+p.message {
+    color: red;
+}
+
+#topic-list ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+#topic-list li {
+    background-color: #eaeada;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #d2d2c3;
+}
+
+p.updated-date {
+    float: right;
+    margin: 0px;
+}
+
+#replies ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+#replies li {
+    background-color: #eaeada;
+    border-top: #d2d2c3 2px solid;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+}
+
+#replies pre {
+    margin: 0px;
+    font-family: inherit;
+    white-space: pre-wrap; /* preserves whitespace while allowing line-wrap */
+}
+
+#footer {
+    text-align: center;
+    color: gray;
+    font-size: 10pt;
+    font-family: sans-serif;
+    padding-top: 2em;
+}
+
+#hr {
+    width: 50%;
+    height: 5px;
+    background-color: black;
+    margin: auto;
+}
+
+ul.flashes {
+    background-color: #c3d9ff;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    list-style: none;
+    padding: 0px;
+    margin-top: 1em;
+    border-radius: 10px;
+}
+
+textarea, input {
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+textarea:focus, input:focus {
+    border-color: black;
+}
+
+input[type="submit"] {
+    border-radius: 11px;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0;
+    background-color: gray;
+    border-color: gray;
+    padding: 2px 8px;
+}
+
+input[type="submit"]:hover {
+    border-color: black;
+}

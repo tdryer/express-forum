@@ -1,0 +1,16 @@
+- title = "Topics";
+h1 Topics
+a(href="/topic/new") Post new topic
+#topic-list
+  ul
+    - for (i = 0; i < topics.length; i++) { topic = topics[i];
+    li
+      a(href="/topic/#{topic["topic_id"]}") #{topic["subject"]} -
+        |  #{topic["replies"]}
+        - if (topic["replies"] == 1)
+          |  reply
+        - else
+          |  replies
+      p.updated-date= formattime(topic["last_reply_date"])
+    - }
+

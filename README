@@ -1,0 +1,34 @@
+express-form is a very simple web forum written in Javascript using Node and the Express node web framework. It is a reimplementation of my flask-forum software, written to learn Node.
+http://nodejs.org/
+http://expressjs.com/
+
+
+TODO
+
+ - CSRF tokens. I'd like this to be built into the forms library.
+ - XSS protection in forms. When a form field has a value auto filled (after a validation error), the value is not safely escaped when the form is rendered. 
+
+
+How to run
+
+You will need:
+Node, npm (the Node package manager), sqlite3
+
+Download a copy of this repo:
+git clone git@github.com:tdryer/express-forum.git
+cd express-forum
+
+Install my fork of the forms library from here:
+npm install https://github.com/tdryer/forms/tarball/master
+
+Use npm to install other dependencies:
+npm install -d
+
+Create the database:
+sqlite3 forum.db < schema.sql
+
+Run the application using Node:
+node app.js
+
+Visit localhost:3000 in a browser. The default account has username/password tom/tom.
+

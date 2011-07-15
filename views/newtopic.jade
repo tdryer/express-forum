@@ -1,0 +1,11 @@
+- title = "New topic";
+h1 New topic
+- if (is_logged_in)
+  form(name="input", action="/topic/new", method="post")
+    !{form}
+    input(type="submit", value="Post Topic")
+- else
+  p
+    | You need to
+    a(href="/login") login
+    |  to post a topic.

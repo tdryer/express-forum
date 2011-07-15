@@ -1,0 +1,20 @@
+- title = subject;
+h1= subject
+#replies
+  ul
+    - for (i = 0; i < replies.length; i++) { reply = replies[i];
+    li
+      b= reply['author']
+      |  posted:
+      p.updated-date= formattime(reply['time'])
+      br/
+      pre= reply['content']
+    - }
+h1 Post a reply
+- if (is_logged_in)
+  - var url = replies[0]["topic_id"]
+  form(name="input", action="/topic/"+url, method="post")
+    !{form}
+    input(type="submit", value="Post Reply")
+- else
+  p You need to login to post a reply.

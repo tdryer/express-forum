@@ -1,0 +1,12 @@
+{
+    "name": "express-forum"
+  , "version": "1.0.0"
+  , "private": true
+  , "dependencies": {
+      "express": "2.3.11"
+    , "jade": ">= 0.0.1"
+    , "bcrypt" : "0.2.3"
+    , "forms" : "0.1.0"
+    , "sqlite3" : "2.0.13"
+  }
+}

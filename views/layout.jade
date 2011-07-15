@@ -1,0 +1,32 @@
+!!! 5
+html
+  head
+    title Test Site - #{title}
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    #header
+      h1 Test Site
+      ul
+        - if (is_logged_in)
+          li
+            form(name="input", action="/logout", method="post")
+              | Logged in as #{username}.
+              input(type="submit", value="Logout")
+        li
+          a(href="/") Topics
+        - if (!is_logged_in)
+          li
+            a(href="/login") Login
+          li
+            a(href="/register") Register
+    #main
+      - if (flashes.length)
+        ul.flashes
+          - for (i = 0; i < flashes.length; i++)
+            - var flash = flashes[i]
+            li= flash
+      != body
+    #footer
+      #hr
+      | powered by express and node.js
+
