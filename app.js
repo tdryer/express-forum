@@ -208,7 +208,7 @@ app.post('/topic/new', require_login(function (req, res) {
       });
     },
     other: function (form) {
-      res.render('newtopic', { form: form });
+      res.render('newtopic', { form: form.toHTML() });
     }
   });
 }));
